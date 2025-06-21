@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Utils</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #181a1b;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .rotating-hash {
+            font-size: 6rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+            background: #23272a;
+            box-shadow: 0 2px 16px #0008;
+            animation: rotate 5s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            color: #7fd1b9;
+            text-align: center;
+        }
+        .explanation {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            text-align: center;
+            max-width: 400px;
+        }
+        .folder-structure-container {
+            margin-top: 2rem;
+            width: 100%;
+            max-width: 600px;
+            background: #23272a;
+            border-radius: 10px;
+            box-shadow: 0 2px 16px #0006;
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+        .folder-structure ul {
+            list-style: none;
+            padding-left: 1.2em;
+        }
+        .folder-structure li {
+            margin: 0.3em 0;
+        }
+        .folder-structure .folder {
+            color: #7fd1b9;
+            font-weight: bold;
+        }
+        .folder-structure .file {
+            color: #e0e0e0;
+        }
+        .download-link {
+            color: #7fd1b9;
+            text-decoration: underline;
+            margin-left: 0.5em;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 2.5rem;"></div>
+    <div class="rotating-hash">JS</div>
+    <h1>Python Utils</h1>
+    <div class="explanation">
+        A collection of handy Python utilities to simplify your coding tasks
+    </div>
+    <div class="folder-structure-container">
+        <h2 style="color:#7fd1b9;text-align:center;margin-top:0;">Project Files</h2>
+        <div style="display: flex; justify-content: center; gap: 2rem;">
+            <ul style="flex:2; min-width:220px; margin:0; padding:0; list-style: none; text-align: center;">
+            <li class="file">README.md
+                <a class="download-link" href="README.md" download>Download</a>
+            </li>
+            </ul>
+            <ul style="flex:2; margin:0; padding:0; list-style: none; text-align: center;">
+            <li class="file">input_handling.py
+                <a class="download-link" href="input_handling.py" download>Download</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
